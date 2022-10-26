@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./scripts/app.js" defer type="module"></script>
+    <link rel="stylesheet" href="./styles/admin.css">
+    <title>PP Lab III - Diaz Lautaro Nicolas</title>
+</head>
+<body>
+    <header class="header-principal">
+        <img src="./images/header.png" alt="imgLogo" id="img-logo">
+            <div class="links-header">
+                <a href="./index.html">Pagina principal</a>
+                <a href="./anuncios.html">Anuncios</a>
+                <a href="">Blog</a>
+                <a href="">Contacto</a>
+            </div>
+    </header>
+    <main name="form-principal">
+        <header class="form-header">
+            <h2 id="titulo-admin">Administración</h2>
+            <img src="./images/encabezado.jpg" alt="encabezado" id="imgEncabezado" width="100%" height="300px">
+            <p id="titulo-form">Complete el formulario según corresponda:</p>
+        </header>
+        <section class="form-container">
+            <form name="anuncios">
+                    <label class="label-form">Titulo:</label>
+                    <div>
+                        <input type="text" name="txtTitulo" placeholder="Titulo de la mascota" required class="inputs-largos imputText">
+                    </div>
+                    <label class="label-form">Descripción:</label>
+                    <div>
+                        <input type="text" name="txtDescripcion" placeholder="Descripcion de la mascota" required class="inputs-largos imputText">
+                    </div>
+                    <fieldset>
+                        <legend>Animal:</legend>
+                        <div>
+                            Gato:<input type="radio" name="rdoMascota" value="gato" checked>
+                        </div>                                      
+                        <div>
+                            Perro:<input type="radio" name="rdoMascota" value="perro">
+                        </div>
+                    </fieldset>
+                    <label class="label-form">Precio:</label>
+                    <div>
+                        <input type="number" name="txtPrecio" placeholder="Min: $0 - Max: $50000" min="0" max="50000" required class="inputs-largos imputText">
+                    </div>
+                    <div class="form-input-imgs">
+                        <div>
+                            <img src="./images/raza.png" alt="raza" width="32px" height="32px">
+                            <input type="text" name="txtRaza" placeholder="Raza" required class="inputRaza">
+                        </div>
+                        <div>
+                            <img src="./images/nacimiento.png" alt="fecha_nacimiento" width="32px" height="32px">
+                            <input type="text" name="txtFechaNacimiento" placeholder="dd/mm/aaaa" required class="inputFechaNacimiento">
+                        </div>
+                        <div>
+                            <img src="./images/vacuna.png" alt="vacuna" width="32px" height="32px">
+                            <select name="selectVacuna" id="selectVacuna">
+                                <option value="0" selected>Elegir una:</option>
+                                <option value="1">Si</option>
+                                <option value="2">No</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div id="buttons">
+                        <input type="hidden" name="txtId">
+                        <button type="submit" class="btn" id="btnGuardar" value="Guardar">
+                            <img src="./images/guardar.png" alt="potencia" width="20px" height="20px"><p>guardar</p>
+                        </button>
+                        <button type="button" class="btn" id="btnEliminar">
+                            <img src="./images/delete.png" alt="potencia" width="20px" height="20px"><p>eliminar</p>
+                        </button>
+                        <button type="button" class="btn" id="btnCancelar">
+                            <img src="./images/cancel.png" alt="potencia" width="20px" height="20px"><p>cancelar</p>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </main>
+    <main class="main-entidad">
+        <section class="entidad-header">
+            <h3 id="titulo-entidad">Listado de Mascotas</h3>
+        </section>
+        <section class="entidad-container">
+            <div id="lista-entidades"></div>
+        </section>
+    </main>
+    <footer>
+        <nav class="links-header">
+            <a href="./index.html">Pagina principal</a>
+            <a href="./anuncios.html">Anuncios</a>
+            <a href="">Blog</a>
+            <a href="">Contacto</a>
+        </nav>
+        <p>Todos los derechos reservados 2022 &copy;</p>
+    </footer>
+</body>
+</html>

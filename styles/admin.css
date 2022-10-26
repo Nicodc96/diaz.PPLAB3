@@ -1,0 +1,317 @@
+body {
+    background-image: url("../images/index.jpg");
+    background-repeat: repeat-y;
+    background-position: center top;
+    background-size: 150% auto;
+    display:inline;
+    justify-content: center;
+    align-items:center;
+    color: #fff;
+    font-family: sans-serif;
+}
+main{
+    width: 43vw;
+    border: 1px solid #CCC;
+    box-shadow: 0 1px 5px #CCC;
+    border-radius: 5px;
+    font-family: verdana;
+    margin: 25px auto;
+    overflow:hidden;
+}
+/* Header */
+.header-principal{
+    width: 100% - 1em;
+    height: 100%;
+    background: rgb(99,99,99);
+    background: linear-gradient(45deg, #51ceca, #8b40bd);
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    display: flex;
+    justify-content: space-between;
+}
+.header-principal img{
+    padding: 15px;
+    margin-left: 40%;
+}
+#img-logo{
+    height: 225px;
+    width: 300px;
+    margin-bottom: -50px;
+    display: flex;
+}
+.links-header{
+    font-size: 20px;
+    padding: 15px;
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    width: max-content;
+}
+.links-header > a{
+    border-radius: 8px;
+    padding: 5px;
+    transition: all 0.25s;
+}
+.links-header a:link{
+    text-decoration: none;
+    display: inline-block;
+    color: rgb(212, 212, 212);
+}
+.links-header a:visited{
+    color:#ca4557;
+}
+.links-header a:hover{
+    background-color: rgba(255, 255, 255, 0.5);
+    color: rgb(31, 31, 31);
+}
+.main-entidad{
+    width:fit-content;
+}
+
+/* Formulario */
+.cabecera{
+    background-color: #131f8a;
+    font-size: 16px;
+    color:white;
+    text-transform: uppercase;
+}
+#titulo-admin{
+    padding: 0;
+    margin: 0;
+    font-size: 36px;
+    font-weight: bold;
+    text-shadow: 0 2px 2px white;
+    color: rgb(56, 56, 56);
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.form-input-imgs{
+    display: flex;
+    justify-content: center;
+    gap: 4vw;
+    margin-bottom: 15px;
+}
+.form-input-imgs>div>input[type="number"], input[type="text"]{
+    border: none;
+    border-bottom: 2px solid;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    font-size: 16px;
+    margin-top: 15px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    width: 100px;
+}
+#selectVacuna{
+    border: none;
+    border-bottom: 2px solid;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    font-size: 16px;
+    margin-top: 15px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    width: 100px;
+}
+.form-header h3{
+    padding: 0;
+    margin: 0;
+    font-size: 17px;
+    font-weight: bold;
+    text-shadow: 0 1px 2px white;
+    color: rgb(56, 56, 56);
+    text-align: center;
+}
+.entidad-header{
+    background: #f1f1f1;
+    background-image: -webkit-linear-gradient( top, #f1f1f1, #CCC );
+    background-image: -ms-linear-gradient( top, #f1f1f1, #CCC );
+    background-image: -moz-linear-gradient( top, #f1f1f1, #CCC );
+    background-image: -o-linear-gradient( top, #f1f1f1, #CCC );
+    box-shadow: 0 1px 2px #888;
+    padding: 10px;
+}
+.entidad-header h3{
+    padding: 0;
+    margin: 0;
+    font-size: 17px;
+    font-weight: bold;
+    text-shadow: 0 1px 2px white;
+    color: rgb(56, 56, 56);
+    text-align: center;
+}
+.form-header{
+    background: #f1f1f1;
+    background-image: -webkit-linear-gradient( top, #f1f1f1, #CCC );
+    background-image: -ms-linear-gradient( top, #f1f1f1, #CCC );
+    background-image: -moz-linear-gradient( top, #f1f1f1, #CCC );
+    background-image: -o-linear-gradient( top, #f1f1f1, #CCC );
+    box-shadow: 0 1px 2px #888;
+    padding: 10px;
+}
+#titulo-form{
+    color: rgb(56, 56, 56);
+    font-size: 17px;
+    text-align: center;
+    text-shadow: 0 1px 2px white;
+    margin-bottom: 0px;
+}
+.form-container{
+    background-color: white;
+    padding: 10px 30px; 
+    font-size: 12px;
+    line-height: 175%;
+    color: #333;
+}
+.entidad-container{
+    background-color: white;
+    padding: 0px;
+    height: max-content;
+    display:contents flex;
+    font-size: 12px;
+    line-height: 150%;
+    text-overflow: ellipsis;
+    overflow:auto;
+    color: #333;
+    text-align: center;
+}
+.label-form{
+    font-weight:normal;
+    margin: 10px;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+.inputs-largos{
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    font-size: 16px;
+    margin: 6px;
+    padding: 10px 10px 15px 10px;
+    border-radius: 5px;
+    background-color: white;
+    border: none;
+    border-bottom: 2px solid;
+}
+.imputText{
+    width: 90%!important;
+}
+.inputRaza, .inputFechaNacimiento{
+    width:20%;
+}
+.form-container fieldset{
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    font-size: 16px;
+    margin: 6px;
+    padding: 5px 5px;
+    border: 2px solid;
+    font-weight: bold;
+    width: 91%;
+    display: flex;
+    justify-content: space-around;
+}
+.form-container input[type="button"], input[type="submit"]{
+    border: none;
+    font-family: sans-serif;
+    font-size: 12px;
+    color: white;
+    cursor: pointer;
+    margin: 17px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    outline: none;
+    position: relative;
+}
+#buttons{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 7vh;
+}
+.btn{
+    border: none;
+    font-family: sans-serif;
+    font-size: 12px;
+    color: white;
+    cursor: pointer;
+    padding: 10px 10px 10px 10px;
+    margin: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s;
+    height: 4vh;
+    display: flex;
+    align-items: center;
+}
+#btnGuardar{
+    background: #2ecc71;
+}
+#btnModificar{
+    background: #2ecc71;
+}
+#btnEliminar{
+    background: #e74c3c;
+}
+#btnEliminar:disabled{
+    background: #636262;
+    cursor:auto;
+}
+#btnCancelar{
+    background: #E2851C;
+}
+/* COMIENZO TABLA */
+table{
+    font-family: 'Roboto';
+    font-size: 1.1rem;
+    border-collapse: collapse;
+    text-align: center;
+    width: 100%;
+    color:white;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    background: linear-gradient(45deg, #49a09d, #5f2c82);
+}
+td, th{
+    /* border: 1px solid black; */
+    /* padding: 5px; */
+    padding: 15px;
+	background-color: rgba(255,255,255,0.2);
+	color:white;
+}
+thead th{
+    background-color: #55608f;
+}
+tr.colorImpar:hover, tr.colorPar:hover{
+    background-color: rgba(192, 192, 192, 0.3);
+    cursor: pointer;
+}
+.colorPar{
+    /* background-color: #3d45be; */
+    font-size: 14px;
+}
+.colorImpar{
+    /* background-color: #5e71c5; */
+    font-size: 14px;
+}
+/* FIN TABLA */
+/* FOOTER */
+footer{
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    background: linear-gradient(45deg, #51ceca, #8b40bd);
+    width: 100%;
+    height: 8vh;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+}
+footer > .links-header{
+    align-self: center;
+    display: inline-block;
+}
+footer p{
+    align-self: center;
+    padding-right: 2vw;
+}
