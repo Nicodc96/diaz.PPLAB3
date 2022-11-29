@@ -1,6 +1,6 @@
 Laboratorio III - División 3°D
 ==============================
-![LogoUTN](https://i.ibb.co/XWTqXZ8/logoutn.png)
+<div align="center"><img src="https://i.ibb.co/XWTqXZ8/logoutn.png" alt="logoUTN"></div>
 
 ## Información
 Aquí alojo el primer parcial realizado durante mi cursada en la materia `Laboratorio de Computación III`, año 2022.
